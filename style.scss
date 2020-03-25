@@ -41,6 +41,8 @@ $theme-colors: (
 
 @import "libs/bootstrap/scss/bootstrap";
 
+@import url("https://bootstrapthemes.co/demo/resource/bootstrap-4-multi-dropdown-hover-navbar/css/bootstrap-4-hover-navbar.css");
+	
 /* Example with custom color */
 body{
 	background-color: map_get($theme-colors, 'custom-color');
