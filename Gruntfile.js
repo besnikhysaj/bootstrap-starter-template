@@ -52,6 +52,7 @@ module.exports = function (grunt) {
 					// makes all src relative to cwd
 					{ expand: true, cwd: 'node_modules/bootstrap', src: ['**'], dest: 'libs/bootstrap/' },
 					{ expand: true, cwd: 'node_modules/jquery', src: ['**'], dest: 'libs/jquery/' },
+					{ expand: true, cwd: 'node_modules/@fortawesome', src: ['**'], dest: 'libs/@fortawesome/' },
 
 					// flattens results to a single level
 					// { expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile' },
