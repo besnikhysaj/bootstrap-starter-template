@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 				options: {
 					livereload: '<%= connect.options.livereload %>',
 				},
-				tasks: ['sass'],
+				tasks: ['sass', 'cssmin', 'javascript_obfuscator'],
 				files: ['js/**/*.js', '*.scss', '*.html'] //give the list of all files that you want to watch for and reload
 			}
 		},
@@ -59,7 +59,30 @@ module.exports = function (grunt) {
 				],
 			},
 		},
-
+		// https://github.com/gruntjs/grunt-contrib-cssmin
+		cssmin: {
+			options: {
+				mergeIntoShorthands: false,
+				roundingPrecision: -1
+			},
+			target: {
+				files: {
+				'style.min.css': ['style.css']
+				}
+			}
+		},
+		// https://github.com/tomasz-oponowicz/grunt-javascript-obfuscator
+		javascript_obfuscator: {
+			options: {
+				debugProtection: true,
+				debugProtectionInterval: true
+			},
+			main: {
+				files: {
+					'libs/js/scripts.min.js': ['js/scripts.js']
+				}
+			}
+		}
 	});
 
 	//register tasks to be run
