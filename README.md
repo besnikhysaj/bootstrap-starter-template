@@ -1,4 +1,4 @@
-# HTML5 Starter Template
+# HTML5 Boostrap Starter Template
 This is a simple HTML5 template for big projects
 
 ## How to install it
