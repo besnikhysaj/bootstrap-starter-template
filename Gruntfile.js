@@ -53,7 +53,7 @@ module.exports = function (grunt) {
 					{ expand: true, cwd: 'node_modules/bootstrap', src: ['**'], dest: 'libs/bootstrap/' },
 					{ expand: true, cwd: 'node_modules/jquery', src: ['**'], dest: 'libs/jquery/' },
 					{ expand: true, cwd: 'node_modules/@fortawesome', src: ['**'], dest: 'libs/@fortawesome/' },
-
+					{ expand: true, cwd: 'node_modules/animate.css', src: ['**'], dest: 'libs/animate.css/' },					
 					// flattens results to a single level
 					// { expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile' },
 				],
